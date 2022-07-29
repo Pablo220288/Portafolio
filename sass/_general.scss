@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	margin: 3rem 0 0 0;
+	font-size: 0.938rem;
+    a {
+        text-decoration: none;
+    }
+    ul {
+        list-style: none;
+    }
+}
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.section-home{
+	padding: 3rem 0 2rem;
+}
+
+
+
+.section-title {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 1.5rem;
+	font-weight: 600;
+}
+
+.about{
+	height: 100vh;
+}
+
+.container-sections {
+	max-width: 968px;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+//Colores Redes
+$colorsRedes:(
+    face:#3b5998,
+    wtsp:#25d366,
+    insta: radial-gradient(circle at 33% 100%,#fed373 4%,#f15245 30%,#d92e7f 62%,#9b36b7 85%,#515ecf),
+	in:#0e76a8,
+	)

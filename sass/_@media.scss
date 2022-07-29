@@ -1,0 +1,113 @@
+@media screen and (max-width: 840px) {
+	.about{
+		height: auto;
+	}
+	.about-data {
+		flex-direction: column;
+		.iconos{
+			margin-top: 45px;
+			grid-template-columns: repeat(14, 23px);
+			grid-template-rows: repeat(6, 24px);
+			grid-template-areas:
+			". . . . . . . . . . txtSass txtSass . ." 
+			"txtHtml5 txtHtml5 . . txtBootstrap txtBootstrap . . txtGit txtGit sass sass . ."
+			"html5 html5 . . bootstrap bootstrap . . git git sass sass js js" 
+			"html5 html5 cs3 cs3 bootstrap bootstrap gitHb gitHb git git . . js js" 
+			". . cs3 cs3 . . gitHb gitHb . . . txtJs txtJs txtJs"
+			". . txtCss3 txtCss3 . . txtGithub txtGithub . . . . . .";
+			gap: 5px;
+			#txtCss3{
+				margin-left: 0px;
+			}
+			#txtSass{
+				margin-left: 0px;
+			}
+			#txtJs{
+				margin-left: 15px;
+			}
+		}
+	}
+
+}
+
+@media screen and (min-width: 576px) {
+	.section-title {
+		font-size: 2rem;
+	}
+
+	.home-data h3 {
+		font-size: 1.3rem;
+	}
+
+	.home-data h1 {
+		font-size: 4rem;
+		line-height: 5rem;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	body {
+		margin: 0;
+	}
+
+	.section {
+		padding-top: 7rem;
+	}
+
+	.nav {
+		height: 5rem;
+	}
+
+	.nav-list {
+		display: flex;
+		align-items: center;
+	}
+
+	.nav-item {
+		margin-left: 2.5rem;
+		margin-bottom: 0;
+	}
+
+	.nav-link,
+	.logo {
+		font-size: 1rem;
+		color: #000;
+	}
+
+	.nav-link:hover {
+		color: #fc037b;
+	}
+
+	.active-link {
+		color: #fc037b;
+	}
+
+	.active-link::before {
+		bottom: 0.5rem;
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+	}
+
+	.nav-open,
+	.nav-close {
+		display: none;
+	}
+
+	.home-data h3 {
+		font-size: 2rem;
+	}
+
+	.home-data h1 {
+		font-size: 5.5rem;
+		line-height: 6rem;
+		font-weight: 700;
+	}
+}
+
+@media screen and (min-width: 968px) {
+	.container-sections {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

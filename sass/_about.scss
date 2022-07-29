@@ -1,0 +1,151 @@
+/* ABOUT SECTION*/
+.about{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.about-data {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	h3 {
+		flex: 2;
+		align-self: start;
+		font-size: 2rem;
+		text-align: center;
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+		transition: all 500ms ease-out;
+		&:hover{
+			transition: all 500ms ease-out;
+			color: #fc037b;
+		}
+	}
+	.conten-about{
+		margin-top: 45px;
+		flex: 4;
+		padding: 0 50px;
+		p{
+			margin-bottom: 15px;
+			text-align: justify;
+		}
+	}
+	.iconos{
+		flex: 2;
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+		display: grid;
+		grid-template-columns: repeat(8, 23px);
+		grid-template-rows: repeat(6, 39px);
+		grid-template-areas: 
+		". . html5 html5 . txtHtml5 . ." 
+		"txtCss3 . . cs3 cs3 . . ." 
+		". . bootstrap bootstrap . txtBootstrap . ." 
+		". txtGit . git git . . ." 
+		". . . . gitHb gitHb . txtGithub" 
+		"txtSass . . sass sass . . ."
+		". . js js . txtJs . .";
+		justify-content: center;
+		gap: 3px;
+		#html5{
+			grid-area: html5;
+		}
+		#txtHtml5{
+			grid-area: txtHtml5;
+		}
+		#cs3{
+			grid-area: cs3;
+		}
+		#txtCss3{
+			grid-area: txtCss3;
+			margin-left: 15px;
+		}
+		#bootstrap{
+			grid-area: bootstrap;
+		}
+		#txtBootstrap{
+			grid-area: txtBootstrap;
+		}
+		#git{
+			grid-area: git;
+		}
+		#txtGit{
+			grid-area: txtGit;
+		}
+		#gitHb{
+			grid-area: gitHb;
+		}
+		#txtGithub{
+			grid-area: txtGithub;
+		}
+		#sass{
+			grid-area: sass;
+		}
+		#txtSass{
+			grid-area: txtSass;
+			margin-left: 15px;
+		}
+		#js{
+			grid-area: js;
+		}
+		#txtJs{
+			grid-area: txtJs;
+		}
+		.txtIcono{
+			align-self: flex-end;
+			opacity: 0;
+			transition: all 500ms ease-out;
+			&:hover{
+				transition: all 500ms ease-out;
+				color: #fc037b;
+			}
+		}
+		.icono-items{
+			filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+			.borde{
+				clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+				width: 52px;
+				height: 52px;
+				background-color: rgb(243, 243, 243);
+				position: relative;
+				img{
+					width: 100%;
+					height: 100%;
+					background-color: #fff;
+					clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+					width: 48px;
+					height: 48px;
+					top: 2px;
+					left: 2px;
+					position: absolute;
+				}
+			}
+		}
+		&:hover .txtIcono{
+			transition: opacity 300ms ease-out;
+			opacity: 1;
+		}
+	}
+}
+
+/* ANIMACION HEXAGONOS*/
+.animated {
+    animation: spin 1s alternate;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

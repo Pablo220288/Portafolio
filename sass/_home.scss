@@ -1,0 +1,65 @@
+/* HOME SECTION*/
+.home{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.home-data {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.home-data{
+	.pablo {
+		width: 80%;
+		.p, .a, .b, .l, .o{
+			fill: #ffffff;
+			stroke: #fc037b;
+			stroke-width: 1.5px;
+		}
+		.p{
+			stroke-dasharray: 425px;
+			stroke-dashoffset: -425px;
+			animation: effect-letter 0.6s linear forwards;
+		}
+		.a{
+			stroke-dasharray: 330px;
+			stroke-dashoffset: -330px;
+			animation: effect-letter 0.6s 0.7s linear forwards;
+		}
+		.b{
+			stroke-dasharray: 420px;
+			stroke-dashoffset: -420px;
+			animation: effect-letter 0.6s 1.4s linear forwards;
+		}
+		.l{
+			stroke-dasharray: 255px;
+			stroke-dashoffset: -255px;
+			animation: effect-letter 0.6s 2.1s linear forwards;
+		}
+		.o{
+			stroke-dasharray: 240px;
+			stroke-dashoffset: -240px;
+			animation: effect-letter 0.6s 2.8s linear forwards;
+		}
+	} 
+	p{
+		font-weight: 500;
+		-webkit-animation: slide-in-fwd-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-fwd-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-delay: 3.5s;
+		margin-bottom: 50px;
+	}
+}
+
+@keyframes effect-letter{
+	to{
+		stroke-dashoffset: 0;
+	}
+}
