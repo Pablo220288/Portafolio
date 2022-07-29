@@ -8,12 +8,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   margin: 3rem 0 0 0;
   font-size: 0.938rem;
+  overflow-x: hidden;
 }
 body a {
   text-decoration: none;
@@ -207,7 +209,6 @@ body ul {
   -webkit-animation: slide-in-fwd-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-fwd-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 3.5s;
-  margin-bottom: 50px;
 }
 
 @keyframes effect-letter {
@@ -223,6 +224,7 @@ body ul {
   align-items: center;
   align-items: center;
   height: 100vh;
+  padding: 60px 0px 0px 0px;
 }
 
 .about-data {
@@ -361,6 +363,7 @@ body ul {
 }
 .proyect {
   height: auto;
+  padding: 60px 0px 0px 0px;
 }
 
 .hero-section {
@@ -447,6 +450,7 @@ body ul {
 }
 
 .contact {
+  padding: 60px 0px 0px 0px !important;
   height: auto;
   margin-bottom: 30px;
 }

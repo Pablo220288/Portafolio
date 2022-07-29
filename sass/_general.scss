@@ -6,12 +6,14 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
 	font-family: "Poppins", sans-serif;
 	margin: 3rem 0 0 0;
 	font-size: 0.938rem;
+	overflow-x: hidden;
     a {
         text-decoration: none;
     }
@@ -29,8 +31,6 @@ body {
 .section-home{
 	padding: 3rem 0 2rem;
 }
-
-
 
 .section-title {
 	font-size: 1.5rem;
